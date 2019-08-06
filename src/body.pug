@@ -1,0 +1,70 @@
+body
+    .page-header PRivet
+    #page-footer Poka
+    div#wrap
+        header
+            h1 #{name}
+            .line <i>Software Developer • #{yearsSince(new Date(1993, 9, 27))} y.o.</i>
+            .line <i>Russia, Moscow Region, UTC+3</i>
+            .line.links
+                .link +7 (901) 709-82-88
+                .link <a href="mailto:emile.shodiev@yandex.ru">emile.shodiev@yandex.ru<a> 
+                .link <a href="https://www.linkedin.com/in/emile-shodiev/">LinkedIn</a> 
+                .link <a href="https://github.com/flerokoo">GitHub</a>
+        hr
+        content
+            h2 Summary
+            p I am a software developer with experience in a variety of fields. Currently I am focused on
+                | server-side development and most of my experience is related to everything that comes
+                | with Mongo-Express-React-Node stack. I also have been using Python and Haskell.
+            p I continuously learn and try to find out new things about technology and world.
+                | Functional programming, virtual reality and game jam enthusiast.
+            p <span class="kw">Keywords:</span> JavaScript, Node.js, Express, MongoDB, Docker, AWS, Server-side, Front-end, React.js, Webpack, Redux, SCSS
+            h2 Education
+            ul.edu
+                li 
+                    div.item-name <i>Bauman Moscow State Technical University</i><br/>
+                        | Nuclear engineering, Master’s degree
+                    div.item-time Moscow, Russia 2011-2017
+                    .clear
+                li 
+                    div.item-name <i>University of California San Diego</i><br/>
+                        | - Algorithmic Toolbox course<br/>
+                        | - Data Structures course
+                    div.item-time MOOC 2019
+                    .clear
+                li 
+                    div.item-name <i>The Hong Kong University of Science and Technology</i><br/>
+                        | Front-End Web Development with React
+                    div.item-time MOOC 2019
+                    .clear
+            h2 Technical experience
+            div.tech-exp
+                .col2
+                    ul.dashed  
+                        li Javascript – 5 years
+                        li TypeScript — 1 year (I’ve been using it from time to time)
+                        li Node.js – 1 year
+                        li React.js and friends – 1 year
+                .col2
+                    ul.dashed
+                        li Python – about half a year
+                        li Haxe — 2 years
+                        li Haskell – about six months of non-commercial use
+                .clear
+            h2 Work experience (about #{yearsSince(new Date(2013, 1, 1))} years total)
+            .job-exp
+                .job
+                    .job__time Apr 2018 – Present (#{formatDateYM(new Date(2018, 3, 15))})
+                    .job__role <b>Software Engineer</b> @ Infomediji d.o.o
+                    .job__descr I am responsible for developing, testing and supporting a web-based application
+                        | for searching and playing VR videos on both mobile and desktop platforms with
+                        | or without official WebVR specification implementation.<br/>
+                        | <span class="kw">Keywords:</span> Javascript, WebVR, WebGL, Webpack, Node.js, Python, Express, MongoDB
+                .job
+                    .job__time 2013 – Apr 2018 (#{formatDateYM(new Date(2013, 1, 1), new Date(2018, 3, 1))})
+                    .job__role <b>Game Developer</b>
+                    .job__descr I was working on different game titles for companies such as SPIL, Orange
+                        | Games, Famobi and others. Most of the games were built to run on HTML5 stack.<br/>
+                        | <span class="kw">Keywords:</span> Game Dev, HTML5, Typescript, Webpack, WebGL, Photoshop, Three.js
+            hr

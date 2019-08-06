@@ -1,0 +1,31 @@
+- var name = "Emile Shodiev"
+
+- var msToYears = ms => ms/1000/60/60/24/365
+- var yearsToMs = years => years * 1000 * 60 * 60 * 24 * 365
+
+- var yearsSince = (since, to = null) => {
+-   let diff = (to ? to.getTime() : Date.now()) - since.getTime();
+-   return Math.floor(msToYears(diff))       
+- }
+
+- var monthsSince = (since, to = null) => {
+-   to = to || new Date();
+-   let months = (to.getFullYear() - since.getFullYear()) * 12;
+-   months -= since.getMonth() + 1;
+-   months += to.getMonth() + 1;
+-   return months <= 0 ? 0 : months;
+- }
+
+- var formatDateYM = (since, to = null) => {
+-   let years = yearsSince(since, to);
+-   let months = monthsSince(since, to) - years * 12;
+-   if (years <= 0 && months <= 0) return `Less than a month`;
+-   if (years <= 0) return `${months} month` + (month == 1 ? "" : "s");
+-   if (months % 12 == 0) return `${years} year` + (years == 1 ? "" : "s");
+-   return `${years} year${years <= 1 ? "" : "s"} and ${months} month${month == 1 ? "" : "s"}`;
+- }
+
+doctype html  
+html(lang='en')  
+    include head.pug
+    include body.pug
