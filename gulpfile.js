@@ -9,8 +9,8 @@ let pugConf =  [
         output: "./docs/resume.html"
     },
     {
-        entry: "./src/test/index.pug",
-        output: "./docs/test.html"
+        entry: "./src/index/index.pug",
+        output: "./docs/index.html"
     }
 ]
 
