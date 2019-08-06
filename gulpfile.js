@@ -10,7 +10,7 @@ let pugConf =  [
     },
     {
         entry: "./src/index/index.pug",
-        output: "./docs/index.html"
+        output: "./index.html"
     }
 ]
 
