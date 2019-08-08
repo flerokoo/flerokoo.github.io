@@ -14,6 +14,10 @@ a, a:visited, a:hover, a:active {
     box-sizing: inherit;
 }
 
+.print-only {
+    display: none;
+}
+
 .clear {
     clear: both;
 }
@@ -162,29 +166,40 @@ ul li .item-time {
     
 }
 
-div.page-header {
-    display: block; 
-    text-align: center; 
-    position: running(header);
-}
-#page-footer {
-    display: block; 
-    text-align: center;
-    position: running(pageFooter);
-}
 
-@page { 
-    @bottom-center { content: element(pageFooter); }
-}
+
+
 
 @media print {
 
+    #page-header {
+        display: block; 
+        text-align: center; 
+        position: running(pageHeader);
+    }
+    
+    #page-footer {
+        display: block; 
+        text-align: center;
+        position: running(pageFooter);
+    }
+
+    @page { 
+        @top-left { 
+            content: "TOP LEFT"; 
+        }
+    }
 
     body {
         border: 1px solid red;
+    } 
+
+    .no-print {
+        display: none;
     }
 
-    
-  
+    .print-only {
+        display: block;
+    }
 
 }
