@@ -70,10 +70,26 @@ body
             hr
             .unbreakable
                 h2 Footnote
-                .no-print <a href="resume.pdf">Download</a> as PDF
+                i Check out some of my pet projects:
+                
+                p.no-bottom-margin
+                    a.print-only(href="http://github.com/flerokoo/discount-bot") http://github.com/flerokoo/discount-bot
+                    a.no-print(href="http://github.com/flerokoo/discount-bot") Discount Bot
+                p.no-top-margin Telegram bot that saves me some dollars
+                p.no-bottom-margin
+                    a.print-only(href="http://github.com/flerokoo/telegram-finance-bot") http://github.com/flerokoo/telegram-finance-bot
+                    a.no-print(href="http://github.com/flerokoo/telegram-finance-bot") Finance Tracking Bot
+                p.no-top-margin This telegram bot eases the burder of filling down my daily expenses
+            hr(style="margin-top: 2em;")
+            .unbreakable
+                .no-print(style="text-align: right;") <a href="resume.pdf">Download</a> as PDF
                 .print-only 
-                    i Links 
-                    ul 
-                        li https://www.linkedin.com/in/emile-shodiev/
-                        li https://github.com/flerokoo
+                    .col2
+                        h2 Links 
+                        ul 
+                            li https://linkedin.com/in/emile-shodiev/
+                            li https://github.com/flerokoo
+                    .col2
+                        h2 Web version of this file
+                        p https://flerokoo.github.io/docs/resume.html
                 

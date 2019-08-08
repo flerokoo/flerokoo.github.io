@@ -14,6 +14,14 @@ a:hover {
     color: #6eb2ff;
 }
 
+p.no-bottom-margin {
+    margin-bottom: 0;
+}
+
+p.no-top-margin {
+    margin-top: 0;
+}
+
 a:active {
     color: rgb(145, 7, 7);
 }
