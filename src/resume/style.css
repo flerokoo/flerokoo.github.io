@@ -88,7 +88,7 @@ ul.padded li {
 }
 
 ul li:before {
-    content: "•";
+    content: "–";
     position: absolute;
     left: -15px;
     transform: scale(0.7);
@@ -173,10 +173,6 @@ ul li .item-time {
 
 @page { 
     margin: 2cm 1.8cm;
-    
-    @top-left { 
-        content: "TOP LEFT"; 
-    }
 }
 
 @media print {
