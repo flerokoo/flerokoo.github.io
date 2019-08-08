@@ -1,6 +1,4 @@
 body
-    #page-header.print-only PRivetsssaaaddD
-    #page-footer.print-only Poka
     div#wrap
         header
             h1 #{name}
@@ -21,7 +19,7 @@ body
                 | Functional programming, virtual reality and game jam enthusiast.
             p <span class="kw">Keywords:</span> JavaScript, Node.js, Express, MongoDB, Docker, AWS, Server-side, Front-end, React.js, Webpack, Redux, SCSS
             h2 Education
-            ul.edu
+            ul.edu.padded
                 li 
                     div.item-name <i>Bauman Moscow State Technical University</i><br/>
                         | Nuclear engineering, Master’s degree
@@ -38,33 +36,44 @@ body
                         | Front-End Web Development with React
                     div.item-time MOOC 2019
                     .clear
-            h2 Technical experience
-            div.tech-exp
-                .col2
-                    ul.dashed  
-                        li Javascript – 5 years
-                        li TypeScript — 1 year (I’ve been using it from time to time)
-                        li Node.js – 1 year
-                        li React.js and friends – 1 year
-                .col2
-                    ul.dashed
-                        li Python – about half a year
-                        li Haxe — 2 years
-                        li Haskell – about six months of non-commercial use
-                .clear
-            h2 Work experience (about #{yearsSince(new Date(2013, 1, 1))} years total)
-            .job-exp
-                .job
-                    .job__time Apr 2018 – Present (#{formatDateYM(new Date(2018, 3, 15))})
-                    .job__role <b>Software Engineer</b> @ Infomediji d.o.o
-                    .job__descr I am responsible for developing, testing and supporting a web-based application
-                        | for searching and playing VR videos on both mobile and desktop platforms with
-                        | or without official WebVR specification implementation.<br/>
-                        | <span class="kw">Keywords:</span> Javascript, WebVR, WebGL, Webpack, Node.js, Python, Express, MongoDB
-                .job
-                    .job__time 2013 – Apr 2018 (#{formatDateYM(new Date(2013, 1, 1), new Date(2018, 3, 1))})
-                    .job__role <b>Game Developer</b>
-                    .job__descr I was working on different game titles for companies such as SPIL, Orange
-                        | Games, Famobi and others. Most of the games were built to run on HTML5 stack.<br/>
-                        | <span class="kw">Keywords:</span> Game Dev, HTML5, Typescript, Webpack, WebGL, Photoshop, Three.js
+            .unbreakable
+                h2 Technical experience
+                div.tech-exp
+                    .col2
+                        ul.dashed 
+                            li Javascript – 5 years
+                            li TypeScript — 1 year (I’ve been using it from time to time)
+                            li Node.js – 1 year
+                            li React.js and friends – 1 year
+                    .col2
+                        ul.dashed
+                            li Python – about half a year
+                            li Haxe — 2 years
+                            li Haskell – about six months of non-commercial use
+                    .clear
+            .unbreakable
+                h2 Work experience (about #{formatDateYM(new Date(2013, 1, 1))} total)
+                .job-exp
+                    .job
+                        .job__time Apr 2018 – Present (#{formatDateYM(new Date(2018, 3, 15))})
+                        .job__role <b>Software Engineer</b> @ Infomediji d.o.o
+                        .job__descr I am responsible for developing, testing and supporting a web-based application
+                            | for searching and playing VR videos on both mobile and desktop platforms with
+                            | or without official WebVR specification implementation.<br/>
+                            | <span class="kw">Keywords:</span> Javascript, WebVR, WebGL, Webpack, Node.js, Python, Express, MongoDB
+                    .job
+                        .job__time 2013 – Apr 2018 (#{formatDateYM(new Date(2013, 1, 1), new Date(2018, 3, 15))})
+                        .job__role <b>Game Developer</b>
+                        .job__descr I was working on different game titles for companies such as SPIL, Orange
+                            | Games, Famobi and others. Most of the games were built to run on HTML5 stack.<br/>
+                            | <span class="kw">Keywords:</span> Game Dev, HTML5, Typescript, Webpack, WebGL, Photoshop, Three.js
             hr
+            .unbreakable
+                h2 Footnote
+                .no-print <a href="resume.pdf">Download</a> as PDF
+                .print-only 
+                    i Links 
+                    ul 
+                        li https://www.linkedin.com/in/emile-shodiev/
+                        li https://github.com/flerokoo
+                

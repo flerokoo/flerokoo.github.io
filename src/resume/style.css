@@ -22,6 +22,10 @@ a, a:visited, a:hover, a:active {
     clear: both;
 }
 
+.unbreakable {
+    page-break-inside: avoid;
+}
+
 .kw {
     color: darkgray;
     font-style: italic;
@@ -64,7 +68,7 @@ content {
 content h2 {
     font-size: 1em;
     margin: 2em 0 1em;
-    page-break-after: avoid;
+    page-break-after: avoid !important;
 }
 
 content h2:first-child {
@@ -77,7 +81,7 @@ ul {
     margin: 0;
 }
 
-ul li {
+ul.padded li {
     display: block;
     margin-top: 1em;
     position: relative;
@@ -167,32 +171,19 @@ ul li .item-time {
 }
 
 
-
-
+@page { 
+    margin: 2cm 1.8cm;
+    
+    @top-left { 
+        content: "TOP LEFT"; 
+    }
+}
 
 @media print {
 
-    #page-header {
-        display: block; 
-        text-align: center; 
-        position: running(pageHeader);
+    #wrap {
+        margin: 0 0;
     }
-    
-    #page-footer {
-        display: block; 
-        text-align: center;
-        position: running(pageFooter);
-    }
-
-    @page { 
-        @top-left { 
-            content: "TOP LEFT"; 
-        }
-    }
-
-    body {
-        border: 1px solid red;
-    } 
 
     .no-print {
         display: none;

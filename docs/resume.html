@@ -22,6 +22,10 @@ a, a:visited, a:hover, a:active {
     clear: both;
 }
 
+.unbreakable {
+    page-break-inside: avoid;
+}
+
 .kw {
     color: darkgray;
     font-style: italic;
@@ -64,7 +68,7 @@ content {
 content h2 {
     font-size: 1em;
     margin: 2em 0 1em;
-    page-break-after: avoid;
+    page-break-after: avoid !important;
 }
 
 content h2:first-child {
@@ -77,7 +81,7 @@ ul {
     margin: 0;
 }
 
-ul li {
+ul.padded li {
     display: block;
     margin-top: 1em;
     position: relative;
@@ -167,32 +171,19 @@ ul li .item-time {
 }
 
 
-
-
+@page { 
+    margin: 2cm 1.8cm;
+    
+    @top-left { 
+        content: "TOP LEFT"; 
+    }
+}
 
 @media print {
 
-    #page-header {
-        display: block; 
-        text-align: center; 
-        position: running(pageHeader);
+    #wrap {
+        margin: 0 0;
     }
-    
-    #page-footer {
-        display: block; 
-        text-align: center;
-        position: running(pageFooter);
-    }
-
-    @page { 
-        @top-left { 
-            content: "TOP LEFT"; 
-        }
-    }
-
-    body {
-        border: 1px solid red;
-    } 
 
     .no-print {
         display: none;
@@ -202,9 +193,9 @@ ul li .item-time {
         display: block;
     }
 
-}</style></head><body><div class="print-only" id="page-header">PRivetsssaaaddD</div><div class="print-only" id="page-footer">Poka</div><div id="wrap"><header><h1>Emile Shodiev</h1><div class="line"><i>Software Developer • 25 y.o.</i></div><div class="line"><i>Russia, Moscow Region, UTC+3</i></div><div class="line links"><div class="link">+7 (901) 709-82-88</div><div class="link"><a href="mailto:emile.shodiev@yandex.ru">emile.shodiev@yandex.ru<a> </div><div class="link"><a href="https://www.linkedin.com/in/emile-shodiev/">LinkedIn</a> </div><div class="link"><a href="https://github.com/flerokoo">GitHub</a></div></div></header><hr/><content><h2>Summary</h2><p>I am a software developer with experience in a variety of fields. Currently I am focused onserver-side development and most of my experience is related to everything that comes
-with Mongo-Express-React-Node stack. I also have been using Python and Haskell.</p><p>I continuously learn and try to find out new things about technology and world.Functional programming, virtual reality and game jam enthusiast.</p><p><span class="kw">Keywords:</span> JavaScript, Node.js, Express, MongoDB, Docker, AWS, Server-side, Front-end, React.js, Webpack, Redux, SCSS</p><h2>Education</h2><ul class="edu"><li> <div class="item-name"><i>Bauman Moscow State Technical University</i><br/>Nuclear engineering, Master’s degree</div><div class="item-time">Moscow, Russia 2011-2017</div><div class="clear"></div></li><li> <div class="item-name"><i>University of California San Diego</i><br/>- Algorithmic Toolbox course<br/>
-- Data Structures course</div><div class="item-time">MOOC 2019</div><div class="clear"></div></li><li> <div class="item-name"><i>The Hong Kong University of Science and Technology</i><br/>Front-End Web Development with React</div><div class="item-time">MOOC 2019</div><div class="clear"></div></li></ul><h2>Technical experience</h2><div class="tech-exp"><div class="col2"><ul class="dashed"> <li>Javascript – 5 years</li><li>TypeScript — 1 year (I’ve been using it from time to time)</li><li>Node.js – 1 year</li><li>React.js and friends – 1 year</li></ul></div><div class="col2"><ul class="dashed"><li>Python – about half a year</li><li>Haxe — 2 years</li><li>Haskell – about six months of non-commercial use</li></ul></div><div class="clear"></div></div><h2>Work experience (about 6 years total)</h2><div class="job-exp"><div class="job"><div class="job__time">Apr 2018 – Present (1 year and 4 months)</div><div class="job__role"><b>Software Engineer</b> @ Infomediji d.o.o</div><div class="job__descr">I am responsible for developing, testing and supporting a web-based applicationfor searching and playing VR videos on both mobile and desktop platforms with
+}</style></head><body><div id="wrap"><header><h1>Emile Shodiev</h1><div class="line"><i>Software Developer • 25 y.o.</i></div><div class="line"><i>Russia, Moscow Region, UTC+3</i></div><div class="line links"><div class="link">+7 (901) 709-82-88</div><div class="link"><a href="mailto:emile.shodiev@yandex.ru">emile.shodiev@yandex.ru<a> </div><div class="link"><a href="https://www.linkedin.com/in/emile-shodiev/">LinkedIn</a> </div><div class="link"><a href="https://github.com/flerokoo">GitHub</a></div></div></header><hr/><content><h2>Summary</h2><p>I am a software developer with experience in a variety of fields. Currently I am focused onserver-side development and most of my experience is related to everything that comes
+with Mongo-Express-React-Node stack. I also have been using Python and Haskell.</p><p>I continuously learn and try to find out new things about technology and world.Functional programming, virtual reality and game jam enthusiast.</p><p><span class="kw">Keywords:</span> JavaScript, Node.js, Express, MongoDB, Docker, AWS, Server-side, Front-end, React.js, Webpack, Redux, SCSS</p><h2>Education</h2><ul class="edu padded"><li> <div class="item-name"><i>Bauman Moscow State Technical University</i><br/>Nuclear engineering, Master’s degree</div><div class="item-time">Moscow, Russia 2011-2017</div><div class="clear"></div></li><li> <div class="item-name"><i>University of California San Diego</i><br/>- Algorithmic Toolbox course<br/>
+- Data Structures course</div><div class="item-time">MOOC 2019</div><div class="clear"></div></li><li> <div class="item-name"><i>The Hong Kong University of Science and Technology</i><br/>Front-End Web Development with React</div><div class="item-time">MOOC 2019</div><div class="clear"></div></li></ul><div class="unbreakable"><h2>Technical experience</h2><div class="tech-exp"><div class="col2"><ul class="dashed"> <li>Javascript – 5 years</li><li>TypeScript — 1 year (I’ve been using it from time to time)</li><li>Node.js – 1 year</li><li>React.js and friends – 1 year</li></ul></div><div class="col2"><ul class="dashed"><li>Python – about half a year</li><li>Haxe — 2 years</li><li>Haskell – about six months of non-commercial use</li></ul></div><div class="clear"></div></div></div><div class="unbreakable"><h2>Work experience (about 6 years and 6 months total)</h2><div class="job-exp"><div class="job"><div class="job__time">Apr 2018 – Present (1 year and 4 months)</div><div class="job__role"><b>Software Engineer</b> @ Infomediji d.o.o</div><div class="job__descr">I am responsible for developing, testing and supporting a web-based applicationfor searching and playing VR videos on both mobile and desktop platforms with
 or without official WebVR specification implementation.<br/>
 <span class="kw">Keywords:</span> Javascript, WebVR, WebGL, Webpack, Node.js, Python, Express, MongoDB</div></div><div class="job"><div class="job__time">2013 – Apr 2018 (5 years and 2 months)</div><div class="job__role"><b>Game Developer</b></div><div class="job__descr">I was working on different game titles for companies such as SPIL, OrangeGames, Famobi and others. Most of the games were built to run on HTML5 stack.<br/>
-<span class="kw">Keywords:</span> Game Dev, HTML5, Typescript, Webpack, WebGL, Photoshop, Three.js</div></div></div><hr/></content></div></body></html>
+<span class="kw">Keywords:</span> Game Dev, HTML5, Typescript, Webpack, WebGL, Photoshop, Three.js</div></div></div></div><hr/><div class="unbreakable"><h2>Footnote</h2><div class="no-print"><a href="resume.pdf">Download</a> as PDF</div><div class="print-only"> <i>Links </i><ul> <li>https://www.linkedin.com/in/emile-shodiev/</li><li>https://github.com/flerokoo</li></ul></div></div></content></div></body></html>
