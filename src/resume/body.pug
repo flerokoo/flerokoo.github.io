@@ -17,7 +17,9 @@ body
                 | with Mongo-Express-React-Node stack. I also have been using Python and Haskell.
             p I continuously learn and try to find out new things about technology and world. 
                 | Functional programming, virtual reality and game jam enthusiast.
-            p <span class="kw">Keywords:</span> JavaScript, Node.js, Express, MongoDB, Docker, AWS, Server-side, Front-end, React.js, Webpack, Redux, SCSS
+            p <span class="kw">Keywords:</span> 
+                each val in ["JavaScript", "Node.js", "Express", "MongoDB", "Docker", "AWS", "Server-side", "Front-end", "React.js", "Webpack", "Redux", "SCSS"]
+                    span.keyword= val
             h2 Education
             ul.edu.padded
                 li 
@@ -55,27 +57,38 @@ body
                 h2 Work experience (about #{formatDateYM(new Date(2013, 1, 1))} total)
                 .job-exp
                     .job
-                        .job__time Apr 2018 – Present (#{formatDateYM(new Date(2018, 3, 15))})
                         .job__role <b>Software Engineer</b> @ Infomediji d.o.o
+                        .job__time Apr 2018 – Present (#{formatDateYM(new Date(2018, 3, 15))})
                         .job__descr I am responsible for developing, testing and supporting a web-based application 
                             | which is used for searching and playing VR videos on both mobile and desktop platforms with
                             | or without official WebVR spec implementation.<br/>
-                            | <span class="kw">Keywords:</span> Javascript, WebVR, WebGL, Webpack, Node.js, Python, Express, MongoDB
+                            p <span class="kw print-only">Keywords: </span>
+                                each val in ["Javascript", "WebVR", "WebGL", "Webpack", "Node.js", "Python", "Express", "MongoDB"]
+                                    span.keyword= val
                     .job
-                        .job__time 2013 – Apr 2018 (#{formatDateYM(new Date(2013, 1, 1), new Date(2018, 3, 15))})
                         .job__role <b>Game Developer</b>
+                        .job__time 2013 – Apr 2018 (#{formatDateYM(new Date(2013, 1, 1), new Date(2018, 3, 15))})
                         .job__descr I was working on different game titles for companies such as SPIL, Orange
                             | Games, Famobi and others. Most of the games were built to run on HTML5 stack.<br/>
-                            | <span class="kw">Keywords:</span> Game Dev, HTML5, Typescript, Webpack, WebGL, Photoshop, Three.js
+                            p <span class="kw print-only">Keywords: </span>
+                                each val in ["Game Dev", "HTML5", "Typescript", "Webpack", "WebGL", "Photoshop", "Three.js"]
+                                    span.keyword= val
             hr
             .unbreakable
                 h2 Footnote
                 i Check out some of my pet projects:
                 
+                
+                p.no-bottom-margin
+                    a.print-only(href="http://github.com/flerokoo/typo-chat") http://github.com/flerokoo/typo-chat
+                    a.no-print(href="http://github.com/flerokoo/typo-chat") Chat
+                p.no-top-margin Distributed and horizontally-scalable chat application written in Node
+
                 p.no-bottom-margin
                     a.print-only(href="http://github.com/flerokoo/discount-bot") http://github.com/flerokoo/discount-bot
                     a.no-print(href="http://github.com/flerokoo/discount-bot") Discount Bot
                 p.no-top-margin Telegram bot that saves me some dollars
+
                 p.no-bottom-margin
                     a.print-only(href="http://github.com/flerokoo/telegram-finance-bot") http://github.com/flerokoo/telegram-finance-bot
                     a.no-print(href="http://github.com/flerokoo/telegram-finance-bot") Finance Tracking Bot
