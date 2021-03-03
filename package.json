@@ -16,7 +16,7 @@
     "gulp": "^4.0.2",
     "live-server": "^1.2.1",
     "pdf-puppeteer": "^1.1.8",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "pug-cli": "^1.0.0-alpha6",
     "pug-pdf": "^0.1.1",
     "puppeteer": "^1.19.0",
