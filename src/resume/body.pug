@@ -3,103 +3,82 @@ body
         header
             h1 #{name}
             .line <i>Software Developer • #{yearsSince(new Date(1993, 9, 27))} y.o.</i>
-            .line <i>Russia, Moscow Region, UTC+3</i>
+            .line <i>Tbilisi, Georgia, UTC+4</i>
             .line.links
-                .link Tg <a href="http://t.me/starina_biba">@starina_biba</a>
-                .link <a href="mailto:emile.shodiev@yandex.ru">emile.shodiev@yandex.ru<a> 
+                .link Tg <a href="https://t.me/starina_biba">@starina_biba</a>
+                .link <a href="mailto:emile@shodiev.ru">emile@shodiev.ru<a>
                 .link <a href="https://www.linkedin.com/in/emile-shodiev/">LinkedIn</a> 
                 .link <a href="https://github.com/flerokoo">GitHub</a>
         hr
         content
             h2 Summary
-            p I am a software developer with experience in a variety of fields. Currently I am focused on 
-                | server-side development and most of my experience is related to everything that comes 
-                | with Mongo-Express-React-Node stack. I also have been using Python and Haskell.
+            p I am a software developer with more than 10 years of extensive experience in a variety of fields.
+                | Utilizing my knowledge of computer science I've designed and implemented innovative, high-performance
+                | and easy-to-support applications.
             p I continuously learn and try to find out new things about technology and world. 
-                | Functional programming, virtual reality and game jam enthusiast.
-            p <span class="kw">Keywords:</span> 
-                each val in ["JavaScript", "Node.js", "Express", "MongoDB", "Docker", "AWS", "Server-side", "Front-end", "React.js", "Webpack", "Redux", "SCSS"]
+                | Functional programming, virtual reality, generative art and game jam enthusiast.
+            p <span class="kw">Keywords: </span>
+                each val in ["Software Architecture", "Javascript", "Typescript", "C#", "Node", "WebGL", "GLSL/HLSL", "Unity", "SQL", "Git", "3D modelling"]
                     span.keyword= val
             h2 Education
             ul.edu.padded
-                li 
+                li
                     div.item-name <i>Bauman Moscow State Technical University</i><br/>
                         | Nuclear engineering, Master’s degree
                     div.item-time Moscow, Russia 2011-2017
                     .clear
-                li 
-                    div.item-name <i>University of California San Diego</i><br/>
-                        | - Algorithmic Toolbox course<br/>
-                        | - Data Structures course
-                    div.item-time MOOC 2019
-                    .clear
-                li 
-                    div.item-name <i>The Hong Kong University of Science and Technology</i><br/>
-                        | Front-End Web Development with React
-                    div.item-time MOOC 2019
-                    .clear
             .unbreakable
-                h2 Technical experience
+                h2 Technical experience highlights
                 div.tech-exp
                     .col2
-                        ul.dashed 
-                            li Javascript – 5 years
-                            li TypeScript – 1 year (I’ve been using it from time to time)
-                            li Node.js – 1 year
-                            li React.js and friends – 1 year
+                        ul.dashed
+                            li Javascript/Typescript – 9 years
+                            li C# – 3 years
+                            li Node – 4 years
                     .col2
                         ul.dashed
-                            li Python – about half a year
-                            li Haxe – 2 years
-                            li Haskell – about six months of non-commercial use
+                            li Unity – 3 years
+                            li WebGL/GLSL - 2 years
+                            li Front-end (html, css, react) – 2 years
                     .clear
             .unbreakable
                 h2 Work experience (about #{formatDateYM(new Date(2013, 1, 1))} total)
                 .job-exp
                     .job
                         .job__role <b>Software Engineer</b> @ Infomediji d.o.o
-                        .job__time Apr 2018 – Present (#{formatDateYM(new Date(2018, 3, 15))})
-                        .job__descr I am responsible for developing, testing and supporting a web-based application 
+                        .job__time Apr 2018 – Feb 2021 (#{formatDateYM(new Date(2018, 3, 15), new Date(2021, 2, 15))})
+                        .job__descr I was responsible for developing, testing and supporting a web-based application
                             | which is used for searching and playing VR videos on both mobile and desktop platforms with
-                            | or without official WebVR spec implementation.<br/>
+                            | or without official WebVR/WebXR spec implementation.<br/>
                             p <span class="kw print-only">Keywords: </span>
-                                each val in ["Javascript", "WebVR", "WebGL", "Webpack", "Node.js", "Python", "Express", "MongoDB"]
+                                each val in ["Javascript", "WebXR", "WebGL", "Webpack", "Node", "MongoDB", "Three.js"]
                                     span.keyword= val
                     .job
-                        .job__role <b>Game Developer</b>
-                        .job__time 2013 – Apr 2018 (#{formatDateYM(new Date(2013, 1, 1), new Date(2018, 3, 15))})
-                        .job__descr I was working on different game titles for companies such as SPIL, Orange
-                            | Games, Famobi and others. Most of the games were built to run on HTML5 stack.<br/>
+                        .job__role <b>Software Developer</b> @ Lion Studios / Azur Games / MOONEE
+                        .job__time Apr 2021 – Mar 2022 (#{formatDateYM(new Date(2021, 3, 1), new Date(2022, 2, 15))})
+                        .job__descr Working as a software developer with multiple international companies,
+                            | I had the opportunity to lead the development of several
+                            | successful mobile games. Working primarily with Unity, C#, and HLSL, I managed to bring
+                            | innovative and engaging gaming experiences to life.
                             p <span class="kw print-only">Keywords: </span>
-                                each val in ["Game Dev", "HTML5", "Typescript", "Webpack", "WebGL", "Photoshop", "Three.js"]
+                                each val in ["C#", "Unity", "Shaders"]
                                     span.keyword= val
-            hr
-            .unbreakable
-                h2 Footnote
-                i Check out some of my pet projects:
-                
-                
-                p.no-bottom-margin
-                    a.print-only(href="http://github.com/flerokoo/typo-chat") http://github.com/flerokoo/typo-chat
-                    a.no-print(href="http://github.com/flerokoo/typo-chat") Chat
-                p.no-top-margin Distributed and horizontally-scalable chat application written in Node
-
-                p.no-bottom-margin
-                    a.print-only(href="http://github.com/flerokoo/discount-bot") http://github.com/flerokoo/discount-bot
-                    a.no-print(href="http://github.com/flerokoo/discount-bot") Discount Bot
-                p.no-top-margin Telegram bot that saves me some dollars
-
-                p.no-bottom-margin
-                    a.print-only(href="http://github.com/flerokoo/telegram-finance-bot") http://github.com/flerokoo/telegram-finance-bot
-                    a.no-print(href="http://github.com/flerokoo/telegram-finance-bot") Finance Tracking Bot
-                p.no-top-margin This telegram bot eases the burden of filling down my daily expenses
+                    .job
+                        .job__role <b>Software Engineer</b> @ Bee Creator
+                        .job__time Mar 2022 – May 2023 (#{formatDateYM(new Date(2022, 3, 1), new Date(2023, 4, 15))})
+                        .job__descr In my most recent position, I employed Unity/C# on client-side, and Typescript/Node/SQL/Nakama on
+                            | server-side to develop realtime multiplayer games. In addition, I had the exciting opportunity to explore
+                            | and experiment with emerging technologies such as Virtual Reality (VR) and web3
+                            p <span class="kw print-only">Keywords: </span>
+                                each val in ["C#", "Unity", "Typescript", "SQL", "Node", "Nakama", "Shaders"]
+                                    span.keyword= val
             hr(style="margin-top: 2em;")
             .unbreakable
                 .no-print(style="text-align: right;") <a href="resume.pdf">Download</a> as PDF
-                .print-only 
+                .print-only
                     .col2
                         h2 Links 
-                        ul 
+                        ul
                             li https://linkedin.com/in/emile-shodiev/
                             li https://github.com/flerokoo
                     .col2

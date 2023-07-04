@@ -206,6 +206,10 @@ ul li .item-time {
     
 }
 
+.hidden {
+    display: none;
+}
+
 
 @page { 
     margin: 2cm 1.8cm;
