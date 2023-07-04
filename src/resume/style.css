@@ -54,13 +54,14 @@ hr {
 }
 
 .keyword {
+    white-space: nowrap;
     background: #E1ECF4;
     margin-right: 2px;
-    padding: 2px 5px;
+    padding: 0 4px;
     color: #39739d;
-    border-radius: 3px;
+    display: inline-block;
+    margin-top: 2px;
 }
-
 
 #wrap {
     max-width: 700px;
