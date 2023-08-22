@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/three": "^0.155.0",
     "concurrently": "^4.1.1",
     "gulp": "^4.0.2",
     "live-server": "^1.2.1",
