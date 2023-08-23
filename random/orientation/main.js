@@ -44,11 +44,11 @@ window.onresize = window.ondeviceorientation = () => {
 
 
 const requestPermission = async () => {
-    if (!window.DeviceOrientationEvent?.requestPermission) {
+    if (!window.DeviceMotionEvent?.requestPermission) {
         alert("No device motion event")
         throw new Error("No event")
     }
-    return window.DeviceOrientationEvent.requestPermission().then((response) => {
+    return window.DeviceMotionEvent.requestPermission().then((response) => {
         if (response !== 'granted') {
             alert("No device motion permission")
             throw new Error("No permission")
