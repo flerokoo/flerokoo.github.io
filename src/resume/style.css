@@ -98,7 +98,7 @@ content {
 }
 
 content h2 {
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 2em 0 1em;
     page-break-after: avoid !important;
 }
@@ -204,7 +204,11 @@ ul li .item-time {
         float: none;
         width: 100%;
     }
-    
+
+    .tech-exp ul {
+        list-style-type: none;
+    }
+
 }
 
 .hidden {
@@ -212,7 +216,7 @@ ul li .item-time {
 }
 
 
-@page { 
+@page {
     margin: 2cm 1.8cm;
 }
 
