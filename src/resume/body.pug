@@ -3,7 +3,7 @@ body
         header
             h1 #{name}
             .line <i>Software Developer • 30 y.o.</i>
-            .line <i>Tbilisi, Georgia, UTC+4</i>
+            .line <i>Tbilisi, Georgia, UTC+4</i> 
             .line.links
                 .link Tg <a href="https://t.me/starina_biba">@starina_biba</a>
                 .link <a href="mailto:emile@shodiev.ru">emile@shodiev.ru<a>
@@ -35,7 +35,7 @@ body
                             li Javascript – 9 years
                             li Typescript – 3½ years
                             li C# – 3 years
-                            li Node – 4 years
+                            li NodeJs – 4 years
                     .col2
                         ul.dashed
                             li Unity – 3 years
@@ -57,30 +57,35 @@ body
                     .job
                         .job__role <b>Software Engineer</b> @ Infomediji d.o.o
                         .job__time Apr 2018 – Feb 2021 (#{formatDateYM(new Date(2018, 3, 15), new Date(2021, 2, 15))})
-                        .job__descr I was responsible for developing, testing and supporting a web-based application
-                            |  which is used for searching and playing VR videos on both mobile and desktop platforms with
-                            |  or without official WebVR/WebXR spec implementation.<br/>
+                        .job__descr I developed, tested, and supported 
+                            |  a web-based VR application for mobile and desktop platforms with
+                            |  or without official WebVR/WebXR spec implementation. The frontend was implemented using 
+                            |  JavaScript, React, WebGL, Three.js. I also leveraged Node.js and Mongo for user authentication, content data retrieval, 
+                            |  and statistics collection.<br/>
                             p <span class="kw print-only">Keywords: </span>
-                                each val in ["Javascript", "React", "WebXR", "WebGL", "Webpack", "Node", "MongoDB", "Three.js"]
+                                each val in ["Javascript", "React", "WebXR", "WebGL", "NodeJs", "MongoDB", "Three.js"]
                                     span.keyword= val
                     .job
                         .job__role <b>Software Developer</b> @ Lion Studios / Azur Games / MOONEE
                         .job__time Apr 2021 – Mar 2022 (#{formatDateYM(new Date(2021, 3, 1), new Date(2022, 2, 15))})
                         .job__descr Working as a software developer with multiple international companies,
                             |  I had the opportunity to lead the development of several
-                            |  successful mobile games. Working primarily with Unity, C#, and HLSL, I managed to bring
-                            |  innovative and engaging gaming experiences to life.
+                            |  successful mobile games. Working with Unity and C#, I brought a variety of game ideas 
+                            |  to life. I also had a chance to work with backend team on essential services such as: 
+                            |  custom analytics, profile and friends management.
                             p <span class="kw print-only">Keywords: </span>
-                                each val in ["C#", "Unity", "HLSL", "Typescript"]
+                                each val in ["C#", "Unity", "Typescript", "NodeJs"]
                                     span.keyword= val
                     .job
                         .job__role <b>Software Engineer</b> @ Bee Creator
-                        .job__time Mar 2022 – July 2023 (#{formatDateYM(new Date(2022, 3, 1), new Date(2023, 4, 15))})
-                        .job__descr In my most recent position, I employed Unity/C# on client-side, and Typescript/Node/SQL/Nakama on
-                            |  server-side to develop complex high-load realtime multiplayer games. In addition, I had the exciting opportunity to explore
-                            |  and experiment with emerging technologies such as Virtual Reality (VR) and web3
+                        .job__time Mar 2022 – July 2023 (#{formatDateYM(new Date(2022, 3, 15), new Date(2023, 4, 15))})
+                        .job__descr In my most recent role, I utilized Unity/C# for the front-end development and 
+                            |  leveraged Typescript/Node/SQL for user-centric services such as authentication, leaderboards,
+                            |  clan management, and real-time chat. Furthermore, I employed Nakama for the core game logic 
+                            |  execution. Additionally, I had the privilege to delve into cutting-edge technologies like VR
+                            |  and web3.
                             p <span class="kw print-only">Keywords: </span>
-                                each val in ["C#", "Unity", "Typescript", "SQL", "Node", "Nakama", "HLSL", "React"]
+                                each val in ["C#", "Unity", "Typescript", "SQL", "NodeJs", "Nakama", "React"]
                                     span.keyword= val
             hr(style="margin-top: 2em;")
             .unbreakable

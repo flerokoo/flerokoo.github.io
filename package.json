@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "./node_modules/.bin/pug ./src/index.pug -w -o ./",
+    "watch": "./node_modules/.bin/pug ./src/**/index.pug -w -o ./",
     "serve": "live-server",
     "start": "./node_modules/.bin/concurrently --kill-others \"npm run watch\" \"npm run serve\""
   },

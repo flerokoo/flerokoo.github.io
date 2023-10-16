@@ -1,0 +1,251 @@
+<head><title></title><meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/><link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet"/><style>
+html {
+    box-sizing: border-box;
+    font-family: 'PT Sans', serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a, a:visited {
+    color: black;
+}
+
+a:hover {
+    color: #6eb2ff;
+}
+
+p.no-bottom-margin {
+    margin-bottom: 0;
+}
+
+p.no-top-margin {
+    margin-top: 0;
+}
+
+a:active {
+    color: rgb(145, 7, 7);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+hr {
+    border: 1px solid #8cbef8;
+    border-radius: 1px;
+    box-shadow: none;
+}
+
+.print-only {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.unbreakable {
+    page-break-inside: avoid;
+}
+
+.kw {
+    color: darkgray;
+    font-style: italic;
+}
+
+.keyword {
+    white-space: nowrap;
+    background: #E1ECF4;
+    margin-right: 2px;
+    padding: 0 4px;
+    color: #39739d;
+    display: inline-block;
+    margin-top: 2px;
+}
+
+#wrap {
+    max-width: 700px;
+    margin: 3.5em auto;
+}
+
+hr {
+    margin: 1em 0;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+header .line .link {
+    display: inline;
+}
+
+header .line .link:before {
+    content: " \00a0 • \00a0 ";
+}
+
+header .line .link:first-child:before {
+    content: "";
+}
+
+content {
+    margin-bottom: 2.5em;
+}
+
+content h2 {
+    font-size: 1.2em;
+    margin: 2em 0 1em;
+    page-break-after: avoid !important;
+}
+
+content h2:first-child {
+    margin-top: 1.5em;
+}
+
+ul {
+    padding: 0;
+    padding-right: 2em;
+    margin: 0;
+}
+
+ul.padded li {
+    display: block;
+    margin-top: 1em;
+    position: relative;
+}
+
+ul li:before {
+    content: "–";
+    position: absolute;
+    left: -15px;
+    transform: scale(0.7);
+}
+
+ul li .item-name {
+    width: 70%;
+    float:left;
+}
+
+ul li .item-time {
+    float: left;
+    width: 30%;
+}
+
+.col2 {
+    width: 50%;
+    float:left;
+}
+
+.tech-exp li {
+    margin: 0;
+}
+
+.job {
+    margin-bottom: 2em;
+    page-break-inside: avoid;
+    page-break-before: avoid;
+}
+.job .job__time {
+    font-style: italic;
+    font-size: 1em;
+}
+
+.job .job__role:before {
+    content: "–";
+    margin-left: -15px;
+    margin-right: 5px;
+}
+
+.job .job__descr {
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #wrap {
+        width: 100%;
+        padding: 10px;
+        margin: 1.5em 0;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    header .line {
+        margin-top: 0em;
+    }
+
+    header .links {
+        margin-top: 1em;
+        padding-top: 1em;
+        border-top: 1px solid gray;
+    }
+
+    header .line .link {
+        display: block;
+    }
+
+    header .line .link:before {
+        content: "";
+    }
+
+    content h2 {
+        font-size: 1.2em;
+        margin: 1em 0 0 !important;
+    }
+
+    .col2 {
+        float: none;
+        width: 100%;
+    }
+
+    .tech-exp ul {
+        list-style-type: none;
+    }
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+@page {
+    margin: 2cm 1.8cm;
+}
+
+@media print {
+
+    .keyword {
+        color: black;
+        padding: 0;
+    }
+
+    .keyword:after {
+        content: ", ";
+    }
+
+    #wrap {
+        margin: 0 0;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    span.print-only {
+        display: inline;
+    }
+
+}
+</style></head>
